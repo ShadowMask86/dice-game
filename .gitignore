@@ -1,0 +1,15 @@
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Debug logs
+*.log
