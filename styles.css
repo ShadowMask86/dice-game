@@ -1,3 +1,4 @@
+/* Main container for the Dice Game */
 .container {
   width: 70%;
   max-width: 900px;
@@ -6,6 +7,7 @@
   padding: 20px 0;
 }
 
+/* Styles for each player's dice section */
 .dice {
   text-align: center;
   display: inline-block;
@@ -13,6 +15,7 @@
   vertical-align: top;
 }
 
+/* Page layout and background styling */
 body {
   min-height: 100vh;
   margin: 0;
@@ -20,6 +23,7 @@ body {
   background-attachment: fixed;
 }
 
+/* Main heading typography and appearance */
 h1 {
   margin: 30px 0;
   font-family: 'Lobster', cursive;
@@ -28,6 +32,7 @@ h1 {
   color: #4ECCA3;
 }
 
+/* Player labels and text styling */
 p {
   font-size: 2rem;
   color: #4ECCA3;
@@ -35,16 +40,19 @@ p {
   margin: 15px 0;
 }
 
+/* Dice image sizing and hover transition */
 img {
   width: 80%;
   max-width: 180px;
   transition: transform 0.25s ease;
 }
 
+/* Slightly enlarge dice images on hover */
 img:hover {
   transform: scale(1.06);
 }
 
+/* Footer appearance and spacing */
 footer {
   margin-top: 5%;
   padding: 20px 0;
@@ -53,6 +61,7 @@ footer {
   font-family: 'Indie Flower', cursive;
 }
 
+/* Responsive styles for smaller screens */
 @media (max-width: 600px){
     .container{
         width: 95%;
