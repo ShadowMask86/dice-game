@@ -1,18 +1,17 @@
 let randomNumber1 = Math.floor(Math.random() * 6 + 1);
 let randomNumber2 = Math.floor(Math.random() * 6 + 1);
-let i = randomNumber1;
-let j = randomNumber2
 
-// console.log(randomNumber1);
+const dice1 = document.querySelector(".img1");
+const dice2 = document.querySelector(".img2");
+const result = document.querySelector("h1");
 
-let dice1 = document.querySelector(".img1").setAttribute("src", "/Dicee+Challenge+-+Starting+Files/images/dice" + i + ".png");
+dice1.src = `./images/dice${randomNumber1}.png`;
+dice2.src = `./images/dice${randomNumber2}.png`;
 
-let dice2 = document.querySelector(".img2").setAttribute("src", "/Dicee+Challenge+-+Starting+Files/images/dice" + j + ".png");
-
-if(i > j){
-    document.querySelector("h1").innerHTML = "🏆 Player 1 Wins!";
-}else if(j > i){
-    document.querySelector("h1").innerHTML = "🏆 Player 2 Wins!";
+if(randomNumber1 > randomNumber2){
+    result.textContent = "🏆 Player 1 Wins!";
+}else if(randomNumber2 > randomNumber1){
+    result.textContent = "🏆 Player 2 Wins!";
 }else{
-    document.querySelector("h1").innerHTML = "🎲Draw !🎲";
+    result.textContent = "🎲Draw !🎲";
 }
